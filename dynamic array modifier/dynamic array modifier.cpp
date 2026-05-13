@@ -23,7 +23,7 @@ void listops() {
     cin >> position;
     if (position < 0  position > size) {
         cout
-    }
+    } 
 }
 
 
