@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="dynamic array modifier/dynamic array modifier.vcxproj" />
+  <Project Path="dynamic array modifier/dynamic array modifier.vcxproj" Id="ef3d7f73-7064-4810-8d60-e99562078ff5" />
 </Solution>

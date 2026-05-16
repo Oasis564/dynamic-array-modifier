@@ -21,9 +21,32 @@ void listops() {
     // get the position at which to insert the new value
     cout << "Enter the postion to enter a new value(0:Base Index): ";
     cin >> position;
-    if (position < 0  position > size) {
-        cout
+    if (position < 0 || position > size) {
+        cout << "Invalid Position, Insertion Failed. " << endl;
     } 
+    else {
+        // get the new vslue to be inserted
+        cout << "Enter the new value to be inserted: ";
+        cin >> new_value;
+
+        // shift the elements to make space for a new value
+        for (int i = size-1; i >= position; --i) {
+            myArray[i + 1] = myArray[i];
+        }
+
+        // inssert the new value given at the new position.
+        myArray[position] = new_value;
+
+        // Increment the array in the insertion
+        ++size;
+
+        // print the array after insertion
+        for (int i = 0; i < size; ++i) {
+            cout << myArray[i] << " ";
+        }
+        cout << endl;
+    }
+    
 }
 
 
@@ -40,7 +63,7 @@ int main()
     //    cout << num << endl;
     //}
 
-    
+    listops();
 
     
 }
